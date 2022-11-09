@@ -5,28 +5,25 @@
     <title>spedizione</title>
 </head>
 <body>
-<form>
+<form id="delivery" autocomplete="on">
 
-    <label for="name">Nome</label><!-- elemento inline-->
-    <input id="name" type="text" name="name" placeholder="Nome"><!-- elemento inline-->
-
-    <label for="lastname">Cognome</label>
-    <input id="lastname" type="text" name="lastname" placeholder="Cognome">
+    <label for="name">Nome</label>
+    <input id="name" type="text" name="name" placeholder="Nome" required>
 
     <label for="lastname">Cognome</label>
-    <input id="lastname" type="text" name="lastname" placeholder="Cognome">
+    <input id="lastname" type="text" name="lastname" placeholder="Cognome" required>
 
     <label for="address">Indirizzo</label>
-    <input id="address" type="text" name="address">
+    <input id="address" type="text" name="address" placeholder="Via pulcinella" required>
 
     <label for="po">Civico</label>
-    <input type="number" name="po" id="po">
+    <input type="number" name="po" id="po" placeholder="1" >
 
     <label for="cap">CAP</label>
-    <input type="number" name="cap" id="cap">
+    <input type="number" name="cap" id="cap" placeholder="000" required>
 
     <label for="province">Provincia</label>
-    <select name="province" id="province">
+    <select name="province" id="province" required>
     <option value="MI">Milano</option>
     <option value="VA">Varese</option>
     <option value="SO">Sondrio</option>
@@ -41,16 +38,22 @@
     </select>
 
     <label for="city">Città</label>
-    <input type="text" name="city" id="city">
+    <input type="text" name="city" id="city" placeholder="Milano" required>
+
+    <label for="nation">Nation</label>
+    <input type="text" name="Nation" id="nation" placeholder="Italia" required>
 
     <label for="phone">Telefono</label>
-    <input type="tel" name="phone" id="phone">
+    <input type="tel" name="phone" id="phone" placeholder="+393333000339">
 
     <label for="email">E-mail</label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" placeholder="tuamail.com" required>
 
     <label for="note">Note</label>
-    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+    <textarea name="note" id="note" cols="30" rows="10" placeholder="note"></textarea>
+
+    <input type="submit" value="invia">
 </form>
+<button type="reset" form="delivery"></button>
 </body>
 </html>

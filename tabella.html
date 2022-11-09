@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>spedizione</title>
+</head>
+<body>
+<table>
+<form id="delivery" autocomplete="on">
+
+  <tr>
+    <td><label for="name">Nome</label></td>
+    <td>
+      <input id="name" type="text" name="name" placeholder="Nome" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="lastname">Cognome</label></td>
+    <td>
+      <input id="lastname" type="text" name="lastname" placeholder="Cognome" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="address">Indirizzo</label></td>
+    <td>
+      <input id="address" type="text" name="address" placeholder="Via pulcinella" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="po">Civico</label></td>
+    <td>
+
+      <input type="number" name="po" id="po" placeholder="1" >
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="cap">CAP</label></td>
+    <td>
+      <input type="number" name="cap" id="cap" placeholder="000" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td> <label for="province">Provincia</label></td>
+    <td>
+      <select name="province" id="province" required>
+        <option value="MI">Milano</option>
+        <option value="VA">Varese</option>
+        <option value="SO">Sondrio</option>
+        <option value="LO">Lodi</option>
+        <option value="BG">Bergamo</option>
+        <option value="CO">Como</option>
+        <option value="BR">Brescia</option>
+        <option value="MB">Monza-Brianza</option>
+        <option value="LE">Lecco</option>
+        <option value="MA">Mantova</option>
+        <option value="OTHER" selected>Altro</option>
+      </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="city">Città</label></td>
+    <td>
+      <input type="text" name="city" id="city" placeholder="Milano" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="nation">Nation</label></td>
+    <td>
+      <input type="text" name="Nation" id="nation" placeholder="Italia" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td>      <label for="phone">Telefono</label></td>
+    <td>
+      <input type="tel" name="phone" id="phone" placeholder="+393333000339">
+    </td>
+  </tr>
+
+  <tr>
+    <td>  <label for="email">E-mail</label></td>
+    <td>
+      <input type="email" name="email" id="email" placeholder="tuamail.com" required>
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="note">Note</label></td>
+    <td>
+      <textarea name="note" id="note" cols="30" rows="10" placeholder="note"></textarea>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <input type="submit" value="invia">
+    </td>
+  </tr>
+
+</form>
+</table>
+<button type="reset" form="delivery">Reset</button>
+</body>
+</html>
